@@ -14,6 +14,7 @@ gem 'sorcery'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails', '~> 5.0.0'
   gem 'factory_bot_rails'
 end
 
@@ -29,7 +30,6 @@ group :development do
   gem 'pry-doc'
   gem 'rubocop'
   gem 'rails_best_practices'
-  gem 'rspec-rails', '~> 5.0.0'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
