@@ -16,7 +16,7 @@ RSpec.describe Task, type: :model do
 
     it 'ステータス未選択の場合に無効になること' do
       task_without_status = build(:task, status: nil)
-      texpect(task_without_status).to be_invalid
+      expect(task_without_status).to be_invalid
       expect(task_without_status.errors[:status]).to eq ["can't be blank"]
     end
 
